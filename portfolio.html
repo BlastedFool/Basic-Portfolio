@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 
 <html>
-
+    <head>
         <link rel="stylesheet" type="text/css" href="../Basic-Portfolio/assets/css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
 
         <title> My Portfolio </title>
     
-        <header class="myname">
-            <h1>Oliver Pajarillo</h1>
-        </header>
-    
+    <header class="myname">
+        <h1>Oliver Pajarillo</h1>
+    </header>
+  
+    <div class="container">
+        <div class="col-sm-12 col-md-4">
+            <ul class="nav list-inline">
+              <li><a href="index.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div> 
+    </div>
+
+
     <body>
     
         <hr>
     
-        <div class="container">
+        <div id="main-container" class="container">
+            <section class="main-section">
     
             <h2>
                 Portfolio
             </h2>
             <hr>
-
+            
+            <div class="work">
             <img id="first" src="http://lorempixel.com/400/200" />
-            <div id="one">
-                Rock, Paper Scissors
-
+            
+                <h3>Rock, Paper Scissors</h3>
             </div>
-
+           
+            <div class="work">
             <img id="second" src="http://lorempixel.com/400/200" />
-            <div id="two">
-                The coin Flip
-            </div>
+           
+                <h3>The coin Flip</h3>
+           </div>
             <img id="third" src="http://lorempixel.com/400/200" />
-            <div id="three">
+            
                 The Sloth Game
             </div>
             <img id="fourth" src="http://lorempixel.com/400/200" />
-            <div id="four">
+            
                 The Troll Run
-            </div>
-        </div>    
+           
+        </div>   
+    
+    
+    </section> 
+
+
+
      </body>
      <!-- Sticky footer thingy is supposed to be here -->
+     <footer>
+        <div class="container">
+          Copyright &copy; 
+        </div>
+      </footer>
     </html>

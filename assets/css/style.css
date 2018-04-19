@@ -52,14 +52,60 @@ input[type=text] {
     margin: 8px;
     box-sizing: border-box;
     }
-.container{
+/* .container{
     position: relative;
     width: 960px;
     margin: 0 auto;
     background-color:plum;
     height: 600px;
-}
+} */
 
+.container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+  }
+
+
+  #main-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+  }
+  
+  
+  .work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+.work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+/* 
 #first{
     position:absolute;
     left: 20px;
@@ -106,4 +152,38 @@ input[type=text] {
 }
 #message{
     height: 100px;
+} */
+
+footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: #fff;
+    color: #ccc;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
+  }
+
+
+  @media screen and (max-width: 980px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .container  {
+        width: 640px;
+    }
+    .header {
+        Position: static;
+    }
 }
